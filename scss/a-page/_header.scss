@@ -63,3 +63,9 @@ nav{
         display: inline-block;
     }
 }
+
+@media screen and (min-width: 1110px){
+    .header__left{
+        gap: 80px;
+    }
+}
