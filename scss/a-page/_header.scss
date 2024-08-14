@@ -79,10 +79,12 @@ nav{
     border-radius: 50px 0 0 0;
     background-color: #79c8c776;
     animation: none;
+    display: none;
     opacity: 0;
 }
 .header__menu-phone.active{
     opacity: 1;
+    display: flex;
     animation: none;
     animation: menuOn .4s cubic-bezier(0.075, 0.82, 0.165, 1);
     backdrop-filter: blur(20px);
@@ -121,4 +123,7 @@ nav{
     .header__left{
         gap: 80px;
     }
+}
+.header-chost{
+    height: 100px;
 }
