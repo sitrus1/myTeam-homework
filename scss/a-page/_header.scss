@@ -1,6 +1,10 @@
 header{
     padding-top: 48px;
     padding-bottom: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
     background-color: $teal;
 }   
 .header-wrapper{
@@ -50,6 +54,55 @@ nav{
     height: 3px;
     display: block;
     background-color: $white;
+    transition: all .2s linear;
+    transform-origin: left;
+}
+.header__menu.active .header__menu__line1{
+    transform: rotate(44deg);
+}
+.header__menu.active .header__menu__line2{
+    opacity: 0;
+}
+.header__menu.active .header__menu__line3{
+    transform: rotate(-44deg);
+}
+
+.header__menu-phone{
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    bottom: 0;
+    border-radius: 50px 0 0 0;
+    background-color: #79c8c776;
+    animation: none;
+    opacity: 0;
+}
+.header__menu-phone.active{
+    opacity: 1;
+    animation: none;
+    animation: menuOn .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    backdrop-filter: blur(20px);
+}
+.header__menu__item__contact-link{
+    margin-bottom: 40px;
+    padding: 10px 32px;
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    border-radius: 55px;
+    border: 2px solid $white;
+}
+.header__menu__item__navigation{
+    padding-left: 10px;
+    color: $white;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 20px;
 }
 
 @media screen and (min-width: 768px) {

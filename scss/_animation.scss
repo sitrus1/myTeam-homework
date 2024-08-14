@@ -1,0 +1,10 @@
+@keyframes menuOn {
+    0%{
+        opacity: 0;
+        right: -242px;
+    }
+    100%{
+        opacity: 1;
+        right: 0;
+    }
+}
