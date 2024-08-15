@@ -3,7 +3,10 @@
     padding-bottom: 83px;
     background-color: $pink;
     text-align: center;
+}
+.start-warpper{
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 .start__title{
@@ -24,7 +27,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .start{
+    .start-warpper{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;

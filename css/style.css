@@ -558,9 +558,15 @@ nav {
   padding-bottom: 83px;
   background-color: #F67E7E;
   text-align: center;
+}
+
+.start-warpper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -586,7 +592,7 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-  .start {
+  .start-warpper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
