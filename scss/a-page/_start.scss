@@ -1,0 +1,36 @@
+.start{
+    padding-top: 83px;
+    padding-bottom: 83px;
+    background-color: $pink;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.start__title{
+    margin-bottom: 24px;
+    color: $green;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.start__link{
+    padding: 10px 32px;
+    color: $green;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    border-radius: 55px;
+    border: 2px solid $green;
+}
+
+@media screen and (min-width: 768px) {
+    .start{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    .start__title{
+        width: 336px;
+    }
+}
