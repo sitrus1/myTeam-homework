@@ -1,0 +1,109 @@
+.manage{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: $green;
+    background-repeat: no-repeat;
+    background-position: 275px 0;
+    background-image: url('../img/manage-element.svg');
+}
+.manage__line{
+    width: 48px;
+    height: 4px;
+    margin-bottom: 32px;
+    display: block;
+    background-color: $pink;
+}
+.manage__title{
+    width: 224px;
+    margin-bottom: 56px;
+    color: $white;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.manage__list{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.manage__item{
+    padding-top: 88px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 128px 0;
+}
+.manage__item___name{
+    margin-bottom: 8px;
+    color: $pink;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+.manage__item__desc{
+    color: $white;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    opacity: 80%;
+}
+.manage__item1{
+    background-image: url('../img/manage-img1.svg');
+}
+.manage__item2{
+    background-image: url('../img/manage-img2.svg');
+}
+.manage__item3{
+    background-image: url('../img/manage-img3.svg');
+}
+
+@media screen and (min-width: 768px) {
+    .manage{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-position: 668px 0;
+    }
+    .manage__title{
+        width: 445px;
+        margin-bottom: 64px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+    .manage__item{
+        width: calc(478px + 95px);
+        padding-top: 0;
+        padding-left: 95px;
+        text-align: left;
+        background-position: 0 0;
+    }
+    .manage__item___name{
+        margin-bottom: 16px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .manage{
+        padding-top: 140px;
+        padding-bottom: 140px;
+        background-position: 1420px 480px;
+    }
+    .manage-flex-desctop{
+        display: flex;
+        justify-content: space-between;
+        gap: 125px;
+    }
+    .manage__title{
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+    }
+    .manage__line{
+        margin-bottom: 54px;
+    }
+    .manage__item__desc{
+        width: 445px;
+    }
+}
