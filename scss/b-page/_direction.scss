@@ -1,0 +1,112 @@
+.direction{
+    padding-top: 88px;
+    padding-bottom: 116px;
+    background-color: $dark;
+}
+.direction__title{
+    margin-bottom: 48px;
+    color: $white;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+}
+.direction__list{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 52px;
+}
+.direction__item{
+    padding: 32px 24px 56px 24px;
+    padding-bottom: 0;
+    position: relative;
+    text-align: center;
+    background-color: $green;
+}
+.direction__user-pic{
+    margin-bottom: 16px;
+    opacity: 1;
+    transition: all .2s ease;
+}
+.direction__name{
+    color: $blue;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    transition: all .4s ease-out;
+}
+.direction__job{
+    color: $white;
+    display: block;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 1;
+    transition: all .4s ease-out;
+}
+.direction__job::after{
+    content: "“Empowered teams create truly amazing products. Set the north star and let them follow it.”";
+    display: block;
+    opacity: 0;
+    transition: all .4s linear;
+}
+.direction__plus{
+    width: 56px;
+    height: 56px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateY(50%) translateX(-50%);
+    color: $green;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: $pink;
+    cursor: pointer;
+    transition: all .4s;
+}
+.direction__plus span{
+    transition: all .4s;
+}
+
+.to-top{
+    transform: translateY(-30px);
+    opacity: 0;
+}
+.translate{
+    transform: translateY(-100px);
+}
+.direction__job.content::after{
+    opacity: 1;
+}
+.direction__plus.active{
+    background-color: $blue;
+}
+.direction__plus.active span{
+    display: inline-block;
+    transform: rotate(45deg);
+    line-height: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .direction__list{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 11px;
+        row-gap: 76px;
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .direction__title{
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .direction__list{
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+    }
+}
